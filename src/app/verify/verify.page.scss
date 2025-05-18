@@ -1,0 +1,60 @@
+.verify-container {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+
+  .verification-info {
+    text-align: center;
+    margin-bottom: 30px;
+
+    h2 {
+      margin-bottom: 10px;
+      color: var(--ion-color-dark);
+    }
+
+    p {
+      color: var(--ion-color-medium);
+      margin: 0;
+    }
+  }
+
+  form {
+    ion-item {
+      --background: transparent;
+      --border-color: var(--ion-color-medium);
+      margin-bottom: 10px;
+    }
+
+    ion-button {
+      margin-top: 20px;
+    }
+  }
+}
+
+.validation-error {
+  color: var(--ion-color-danger);
+  font-size: 12px;
+  margin: -5px 0 10px 16px;
+}
+
+.error-message {
+  color: var(--ion-color-danger);
+  text-align: center;
+  margin: 10px 0;
+}
+
+.resend-code {
+  text-align: center;
+  margin-top: 20px;
+  color: var(--ion-color-medium);
+
+  a {
+    color: var(--ion-color-primary);
+    text-decoration: none;
+    font-weight: 500;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}

@@ -1,1 +1,32 @@
-<ion-content> </ion-content>
+<ion-content class="search-screen">
+  <ion-searchbar
+    placeholder="Artists, songs, or podcasts"
+    animated
+    class="search-bar"
+  ></ion-searchbar>
+
+  <ion-row>
+    <ion-col size="12">
+      <h2 class="section-header">Browse All</h2>
+    </ion-col>
+  </ion-row>
+
+  <ion-grid>
+    <ion-row>
+      <ion-col size="6" *ngFor="let item of browseAll">
+        <ion-card
+          class="browse-card"
+          [style.--background]="item.color"
+          (click)="openAlbum(item)"
+        >
+          <ion-card-content>
+            <h2>{{ item.title }}</h2>
+            <img
+              [src]="'/assets/images/albums/'+dasherize(item.image)+'.jpg'"
+            />
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

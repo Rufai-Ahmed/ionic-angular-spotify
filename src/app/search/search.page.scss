@@ -1,0 +1,57 @@
+ion-content {
+  --background: var(--ion-color-dark);
+  --padding-top: 20px;
+}
+
+.search-bar {
+  --background: #242424;
+  --color: #fff;
+  --placeholder-color: #b3b3b3;
+  --icon-color: #b3b3b3;
+  --clear-button-color: #b3b3b3;
+  --border-radius: 8px;
+  margin: 0 20px 20px 20px;
+}
+
+.section-header {
+  color: #fff;
+  font-family: "Spotify";
+  font-weight: bold;
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+
+.browse-card {
+  margin: 10px;
+  border-radius: 8px;
+  overflow: hidden;
+  height: 180px;
+  position: relative;
+
+  ion-card-content {
+    padding: 16px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    h2 {
+      color: #fff;
+      font-family: "Spotify";
+      font-size: 24px;
+      font-weight: bold;
+      margin: 0;
+      z-index: 1;
+    }
+
+    img {
+      position: absolute;
+      right: -20px;
+      bottom: -20px;
+      width: 100px;
+      height: 100px;
+      transform: rotate(25deg);
+      z-index: 0;
+    }
+  }
+}

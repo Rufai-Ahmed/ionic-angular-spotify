@@ -1,0 +1,56 @@
+<ion-content class="login-screen">
+  <div class="login-container">
+    <div class="form-container">
+      <h1>Log in to Spotify</h1>
+
+      <form (ngSubmit)="login()">
+        <ion-item class="form-item">
+          <ion-label position="stacked">Email or username</ion-label>
+          <ion-input
+            type="text"
+            [(ngModel)]="username"
+            name="username"
+            required
+          ></ion-input>
+        </ion-item>
+
+        <ion-item class="form-item">
+          <ion-label position="stacked">Password</ion-label>
+          <ion-input
+            type="password"
+            [(ngModel)]="password"
+            name="password"
+            required
+          ></ion-input>
+        </ion-item>
+
+        <div class="error-message" *ngIf="errorMessage">{{ errorMessage }}</div>
+
+        <ion-button expand="block" type="submit" class="login-button">
+          LOG IN
+        </ion-button>
+      </form>
+
+      <div class="divider">
+        <span>OR</span>
+      </div>
+
+      <div class="social-login">
+        <ion-button expand="block" class="facebook-button">
+          <ion-icon name="logo-facebook" slot="start"></ion-icon>
+          CONTINUE WITH FACEBOOK
+        </ion-button>
+
+        <ion-button expand="block" class="apple-button">
+          <ion-icon name="logo-apple" slot="start"></ion-icon>
+          CONTINUE WITH APPLE
+        </ion-button>
+
+        <ion-button expand="block" class="google-button">
+          <ion-icon name="logo-google" slot="start"></ion-icon>
+          CONTINUE WITH GOOGLE
+        </ion-button>
+      </div>
+    </div>
+  </div>
+</ion-content>

@@ -1,6 +1,6 @@
 {
   "appId": "io.ionic.starter",
-  "appName": "devdacticSpotify",
+  "appName": "rex-musix",
   "bundledWebRuntime": false,
   "npmClient": "npm",
   "webDir": "www",

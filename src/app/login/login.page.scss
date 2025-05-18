@@ -1,0 +1,133 @@
+ion-content {
+  --background: #000;
+}
+
+.login-screen {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.login-container {
+  width: 100%;
+  max-width: 450px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.logo-container {
+  text-align: center;
+  margin-bottom: 40px;
+
+  .logo {
+    width: 200px;
+    height: auto;
+  }
+}
+
+.form-container {
+  width: 100%;
+  h1 {
+    color: #fff;
+    font-family: "Spotify";
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+}
+
+.form-item {
+  --background: transparent;
+  --border-color: #535353;
+  --color: #fff;
+  margin-bottom: 20px;
+
+  ion-label {
+    color: #fff;
+    font-family: "Spotify";
+    font-size: 14px;
+    margin-bottom: 8px;
+  }
+
+  ion-input {
+    --color: #fff;
+    --padding-start: 0;
+    font-family: "Spotify";
+  }
+}
+
+.login-button {
+  --background: #1db954;
+  --background-hover: #1ed760;
+  --background-activated: #1ed760;
+  --color: #000;
+  font-family: "Spotify";
+  font-weight: bold;
+  margin-top: 20px;
+  height: 48px;
+}
+
+.error-message {
+  color: #e91429;
+  font-family: "Spotify";
+  font-size: 14px;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.divider {
+  display: flex;
+  align-items: center;
+  margin: 30px 0;
+  color: #535353;
+
+  &::before,
+  &::after {
+    content: "";
+    flex: 1;
+    border-bottom: 1px solid #535353;
+  }
+
+  span {
+    padding: 0 10px;
+    font-family: "Spotify";
+    font-size: 14px;
+  }
+}
+
+.social-login {
+  ion-button {
+    --background: transparent;
+    --border-color: #535353;
+    --border-style: solid;
+    --border-width: 1px;
+    --color: #fff;
+    font-family: "Spotify";
+    font-weight: bold;
+    margin-bottom: 10px;
+    height: 48px;
+
+    ion-icon {
+      margin-right: 10px;
+    }
+  }
+
+  .facebook-button {
+    --border-color: #1877f2;
+    --color: #1877f2;
+  }
+
+  .apple-button {
+    --border-color: #fff;
+    --color: #fff;
+  }
+
+  .google-button {
+    --border-color: #4285f4;
+    --color: #4285f4;
+  }
+}
